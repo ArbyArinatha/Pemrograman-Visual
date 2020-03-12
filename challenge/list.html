@@ -1,0 +1,55 @@
+<html>
+
+    <head></head>
+
+<body>
+  <h1>Ini adalah Halaman List HTML</h1>
+  <div id="list"></div>
+</body>
+
+<script>
+  const electron = require("electron");
+  const {ipcRenderer} = electron;
+  ipcRendrer.send("appointment;request;list");
+
+  ipcRenderer.on("appoinment;request;list",(event, appoinment) => {
+    const listDiv = document.getElementById("List");
+    appoinments.forEach(appointment =>{
+      const appointmentDiv = document.createdElement("div");
+      const nameParagraph = document.creatElement("p");
+      nameParagraph.innerHTML = `Name: ${appointment.name}`;
+
+      const numberParagraph = document.createElement("p");
+      nameParagraph.innerHTML = `Phone Number: ${appointment.number}`;
+
+      const dateParagraph = document.createElement("p");
+      nameParagraph.innerHTML = `Date: ${appointment.date}`;
+
+      const hourParagraph = document.createElement("p");
+      nameParagraph.innerHTML = `Hour: ${appointment.hour}`;
+
+      const symptonsParagraph = document.createElement("p");
+      nameParagraph.innerHTML = `Symptons: ${appointment.symptons}`;
+
+      const doneParagraph = document.createElement("p");
+      doneParagraph.innerHTML = `Done: ${appointment.done ? "Yes" : "No"}`;
+
+      const hr = document.createElement("hr");
+
+      appointmentDiv.appendChild(nameParagraph);
+      appointmentDiv.appendChild(numberParagraph);
+      appointmentDiv.appendChild(dateParagraph);
+      appointmentDiv.appendChild(hourParagraph);
+      appointmentDiv.appendChild(symtonsParagraph);
+      appointmentDiv.appendChild(doneParagraph);
+      appointmentDiv.appendChild(hr);
+
+      listDiv.append(appointmentDiv);
+
+
+    });
+
+  });
+</script>
+
+</html>
