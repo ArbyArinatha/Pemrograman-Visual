@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Luas Prisma Segitiga</title>
+<style>
+                input.tombol
+                                {
+                                color: blue;
+                                background: white;
+                                border: 1px outset black;
+                                font-family: "Tahoma";
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;
+                                }
+                input.reload
+                                {
+                                color: rgb(255, 166, 0);
+                                background: rgb(255, 255, 255);
+                                border: 1px outset black;
+                                font-family: "Arial";
+                                font-size: 15px;
+                                font-weight: bold;
+                                width : auto;
+                                }
+
+                body
+                                {
+                                background-image: url('math4.jpg');
+                                background-repeat: repeat;
+                                background-size: cover;
+                                }
+                font
+                                {
+                                font-family: "Tahoma";
+                                font-size: 15px;
+                                font-weight: bold;
+                                }
+                input.menu
+                                {
+                                color: rgb(233, 233, 250);
+                                background: rgb(19, 159, 214);
+                                border: 1px outset rgb(22, 22, 21);
+                                font-family: "Tahoma";
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;
+                                }                             
+                                
+                </style>
+
+</head>
+<center>
+    <div class="font">
+    <b><font color="black" size="5">
+    <p>Luas Prisma Segitiga</p>
+    <form id="input" name="input" method="post" action="">
+            <table width="500" border="0">
+            <tr>
+            <td width="178"><b><font color="black" size="5">Masukan Tinggi Segitiga</td>
+            <td><input name="tinggisegitiga" type="text" id="tinggisegitiga"></td>
+            </tr>
+            <tr>
+            <td width="178"><b><font color="black" size="5">Masukan Alas</td>
+            <td><input name="alasprisma" type="text" id="alasprisma"></td>
+            </tr>
+            <tr>
+            <td width="178"><b><font color="black" size="5">Masukan Tinggi</td>
+            <td><input name="tinggiprisma" type="text" id="tinggiprisma"></td>
+            </tr>
+    </table>
+</div>
+
+    <p>
+<p>
+<input name="hasil" type="button" id="hasil" value="Check" class="tombol"
+onclick="Check()"/>
+</p>
+
+    <table>
+    <tr>
+        <td><b><font color="black" size="5">Luas Prisma Segitiga</td>
+        <td><input name="luas" type="text" id="luas"></td>
+        </tr>
+    </table>
+
+<p>
+<input name="ulang" type="reset" id="ulang" value="Reload" class="reload"
+onclick="Reload()"/>
+</p>
+</div>
+</form>
+           
+<script>
+    function Check()
+    {
+        tinggisegitiga=input.tinggisegitiga.value;
+        alasprisma=input.alasprisma.value;
+        tinggiprisma=input.tinggiprisma.value;
+        input.luas.value = (tinggisegitiga*alasprisma) + (3*tinggiprisma);
+    }
+</script>
+
+<center>
+    <br><br>
+    <a href="luasjajarangenjang.html">
+    <input name="Luas Jajar Genjang" type="button" id="Luas Jajar Genjang" value="Luas Jajar Genjang" class="menu"
+    onclick="LuasJajarGenjang()"/>
+    </a>
+    <a href="kelilingj.html">
+        <input name="Keliling Jajar Genjang" type="button" id="Keliling Jajar Genjang" value="Keliling Jajar Genjang" class="menu"
+        onclick="KelilingJajarGenjang()"/>
+    </a>
+    <a href="kerucut.html">
+        <input name="Luas Kerucut" type="button" id="Luas Kerucut" value="Luas Kerucut" class="menu"
+        onclick="LuasKerucut()"/>
+    </a> 
+    <a href="tabung.html">
+        <input name="Luas Tabung" type="button" id="Luas Tabung" value="Luas Tabung" class="menu"
+        onclick="LuasTabung()"/>
+    </a>
+    <a href="prisma.html">
+        <input name="Luas Prisma" type="button" id="Luas Prisma" value="Luas Prisma" class="menu"
+        onclick="LuasPrisma()"/>
+    </a> 
+    <a href="kubus.html">
+        <input name="Luas Kubus" type="button" id="Luas Kubus" value="Luas Kubus" class="menu"
+        onclick="LuasKubus()"/>
+    </a> 
+    </center>
+</body>
+</html>
+
