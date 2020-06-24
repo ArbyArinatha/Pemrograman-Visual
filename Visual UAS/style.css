@@ -1,0 +1,101 @@
+body{
+    background-image: url('math4.jpg');
+    font-family: 'Pangolin', cursive;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#menutop{
+    margin: 0 auto;
+    width: 700px;
+    background: #fdfdfd;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+label,
+footer {
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.output {
+    background: center/cover no-repeat url('/media/examples/hamster.jpg');
+    position: relative;
+}
+
+
+#menutop ul:after, #menutop ul:before{
+    display: table;
+    content: "";
+}
+
+#menutop ul:after{
+    clear: both;
+}
+
+#menutop li{
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+
+#button{
+    /* background-color: #38dd7d; */
+    background-color:  	#0ba1a1;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0 10px 0;
+    border-radius: 20px;
+    border-top: none;
+}
+
+#box{
+    background-color: rgba(255,255,255,0.8);
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0 10px 0;
+    border-radius: 20px;
+    border-top: none;
+}
+
+.left{
+    float: left;
+    display: block;
+}
+
+.right{
+    float: right;
+    display: block;    
+}
+
+#box ul a{
+    text-decoration: none;
+    color: #ecf0f1;
+    background-color: #16a085;
+    background: transparent;
+    width: 100px;
+    padding: 5px 10px;
+    margin: 5px;
+}
