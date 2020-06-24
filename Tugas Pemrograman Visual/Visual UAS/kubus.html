@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <title>Kubus</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pangolin&display=swap');
+                input.tombol
+                                {
+                                color: blue;
+                                background: white;
+                                border: 1px outset black;
+                                font-family: "Tahoma";
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;
+                                }
+                input.reload
+                                {
+                                color: rgb(255, 166, 0);
+                                background: rgb(255, 255, 255);
+                                border: 1px outset black;
+                                font-family: "Arial";
+                                font-size: 15px;
+                                font-weight: bold;
+                                width : auto;
+                                }
+                body
+                                {
+                                    background-image: url('math4.jpg');
+                                    background-repeat: repeat;
+                                    background-size: cover;
+                                }
+                font
+                                {
+                                
+                                font-size: 15px;
+                                
+                                }
+   
+    </style>  
+</head>
+<body>
+    <div id="menutop">
+        <ul class="nol">
+            <a href="#">
+                <li>
+                    <div>
+                        <a href="kelilingj.html">
+                        <img src="gj2.png" alt="" height="80" widht="80">
+                        </a>
+                         <h3>JAJAR GENJANG</h3>
+                    </div>
+                </li>
+            </a>
+        <ul class="right">
+            <a href="#" class="satu">
+                <li>
+                    <a href="kubus.html">
+                    <div>
+                        <img src="kubus.png" alt="" height="80" widht="80">
+                    </div>
+                    </a>
+                    <h3>KUBUS</h3>
+                </li>
+            </a>
+        </ul>
+        <ul class="right">
+            <a href="#" class="dua">
+                <li>
+                    <a href="prisma.html">
+                    <div>
+                        <img src="prismasgt.jpg" alt="" height="80" widht="80">
+                    </div>
+                    </a>
+                    <h3>PRISMA SEGITIGA</h3>              
+                </li>
+            </a>
+        </ul>
+        <ul class="right">
+            <a href="#" class="tiga">
+                <li>
+                    <a href="tabung.html">
+                    <div>
+                        <img src="tabung.jpg" alt="" height="80" widht="80">
+                    </div>
+                    </a>
+                    <h3>TABUNG</h3>
+                </li>
+            </a>
+        </ul>
+        <ul class="right">
+            <a href="#" class="empat">
+                <li>
+                    <a href="kerucut.html">
+                    <div>
+                        <img src="kerucut.svg" alt="" height="80" widht="80">
+                    </div>
+                    </a>
+                    <h3>KERUCUT</h3>
+                </li>
+            </a>
+        </ul>
+</div>
+        <center>
+            <b><font color="black" size="5">
+            <p>Luas Permukaan Kubus</p>
+        <div class="font">
+            <form id="input" name="input" method="post" action="">
+                            <table>
+                            <tr>
+                                <td><b><font color="black" size="5">Masukan Sisi</td>
+                                <td><input name="sisi" type="text" id="sisi"></td>
+                            </tr>
+                           </table>
+            
+     <p>
+    <input name="hasil" type="button" id="hasil" value="Check" class="tombol"
+    onclick="Check()"/>
+    </p>
+    
+                        <table>
+                        <tr>
+                        <td><b><font color="black" size="5">Luas Kubus</td>
+                        <td><input name="luas" type="text" id="luas"></td>
+                        </tr>
+                        </table>
+        </div>
+    
+    <p>
+    <input name="ulang" type="reset" id="ulang" value="Reload" class="reload"
+    onclick="Reload()"/>
+    </p>                      
+    
+    </form>
+        </center>
+            
+    <script>
+        function Check()
+        {
+            sisi=input.sisi.value
+            sisi=input.sisi.value
+            sisi=input.sisi.value
+            input.luas.value= 6*sisi*sisi;
+        }
+    </script>
+        <center>
+       
+</div>
+
+<div id="box">
+    <ul class="left">
+        <a href="awal.html">
+            <img src="home.png" alt="" height="30" width="30">
+        </a>
+        <a href="menu.html">
+            <img src="menu2.png" alt="" height="30" width="30">
+        </a>
+    </ul>
+    </div>
+    
+</body>
+</html>
+
+        

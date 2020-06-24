@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <title>Keliling Jajar Genjang</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pangolin&display=swap');
+        input.tombol
+                                {
+                                color: blue;
+                                background: white;
+                                border: 1px outset black;
+                                font-family: "Tahoma";
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;
+                                }
+                input.reload
+                                {
+                                color: rgb(255, 166, 0);
+                                background: rgb(255, 255, 255);
+                                border: 1px outset black;
+                                font-family: "Arial";
+                                font-size: 15px;
+                                font-weight: bold;
+                                width : auto;
+                                }
+                body
+                                {
+                                    background-image: url('math4.jpg');
+                                    background-repeat: repeat;
+                                    background-size: cover;
+                                }
+                font
+                                {
+                                
+                                font-size: 15px;
+                                
+                                }
+                input.menu
+                                {
+                                color: rgb(233, 233, 250);
+                                background: rgb(19, 159, 214);
+                                border: 1px outset rgb(22, 22, 21);
+                                font-family: "Tahoma";
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;
+                                }      
+    </style>  
+</head>
+<body>
+    <div id="menutop">
+        <ul class="nol">
+            <a href="#">
+                <li>
+                    <div>
+                        <a href="kelilingj.html">
+                        <img src="gj2.png" alt="" height="80" widht="80">
+                        </a>
+                         <h3>JAJAR GENJANG</h3>
+                         <a href="luasjajarangenjang.html">
+                            <img src="LUAS.JPG" alt="" height="30" widht="30">
+                          </a>
+                               <a href="kelilingj.html">
+                                <img src="KLL.JPG" alt="" height="30" widht="30">
+                           </a>
+                    </div>
+                </li>
+            </a>
+        <ul class="right">
+            <a href="#" class="satu">
+                <li>
+                    <a href="kubus.html">
+                    <div>
+                        <img src="kubus.png" alt="" height="80" widht="80">
+                    </div>
+                    </a>
+                    <h3>KUBUS</h3>
+                </li>
+            </a>
+        </ul>
+        <ul class="right">
+            <a href="#" class="dua">
+                <li>
+                    <a href="kubus.html">
+                    <div>
+                        <img src="prismasgt.jpg" alt="" height="80" widht="80">
+                    </div>
+                    </a>
+                    <h3>PRISMA SEGITIGA</h3>              
+                </li>
+            </a>
+        </ul>
+        <ul class="right">
+            <a href="#" class="tiga">
+                <li>
+                    <a href="tabung.html">
+                    <div>
+                        <img src="tabung.jpg" alt="" height="80" widht="80">
+                    </div>
+                    </a>
+                    <h3>TABUNG</h3>
+                </li>
+            </a>
+        </ul>
+        <ul class="right">
+            <a href="#" class="empat">
+                <li>
+                    <a href="kerucut.html">
+                    <div>
+                        <img src="kerucut.svg" alt="" height="80" widht="80">
+                    </div>
+                    </a>
+                    <h3>KERUCUT</h3>
+                </li>
+            </a>
+        </ul>
+</div>
+<center>
+<b><font color="black" size="5">
+    <p>Keliling Jajar Genjang</p>
+    </font></b>
+    
+    <div class="font">
+    <form id="input" name="input" method="post" action="">
+                    <table>
+                    <tr>
+                    <td><b><font color="black" size="5">Masukan Alas</td>
+                    <td><input name="alas" type="text" id="alas"></td>
+                    </tr>
+                    <tr>
+                    <td><b><font color="black" size="5">Masukan Tinggi</td>
+                    <td><input name="tinggi" type="text" id="tinggi"></td>
+                    </tr>
+                    </table>
+    </div>
+    
+    <p>
+    <input name="hasil" type="button" id="hasil" value="Check" class="tombol"
+    onclick="Check()"/>
+    </p>
+    
+                    <table>
+                    <tr>
+                    <td><b><font color="black" size="5">Luas Jajar Genjang</td>
+                    <td><input name="luas" type="text" id="luas"></td>
+                    </tr>
+                    </table>
+    
+    <p>
+    <input name="ulang" type="reset" id="ulang" value="Reload" class="reload"
+    onclick="Reload()"/>
+    </p>
+    
+    </form>
+    
+    <script>
+        function Check()
+        {
+            alas=input.alas.value;
+            tinggi=input.tinggi.value;
+            input.luas.value=2*(alas*tinggi);
+        }
+    </script>
+</div>
+</center>
+
+<div id="box">
+    <ul class="left">
+        <a href="awal.html">
+            <img src="home.png" alt="" height="30" width="30">
+        </a>
+        <a href="menu.html">
+            <img src="menu2.png" alt="" height="30" width="30">
+        </a>
+    </ul>
+    </div>
+    
+</body>
+</html>
